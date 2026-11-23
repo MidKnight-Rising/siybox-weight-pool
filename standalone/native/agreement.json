@@ -1,0 +1,43 @@
+{
+  "arm": "agreement",
+  "architecture": "native_three_rule_agreement",
+  "model_parameters": 2370840,
+  "width": 120,
+  "depth": 3,
+  "context": 128,
+  "corpus_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "train_tokens": 261333,
+  "validation_tokens": 29038,
+  "scored_tokens": 28928,
+  "vocabulary": 8000,
+  "train_steps": 400,
+  "train_batch": 8,
+  "training_targets": 409600,
+  "seed": 1337,
+  "training_start_offsets_sha256": "b7b10776e89d6d7eb93b0a513d0150290ead4dd836d204659289181a72a50c35",
+  "validation_loss_nats": 4.698627155438989,
+  "validation_correct": 7003,
+  "validation_accuracy": 0.24208379424778761,
+  "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+  "torch_version": "2.12.1+cu130",
+  "fp32": true,
+  "tf32": false,
+  "live_model_allocated_mib": 26.75927734375,
+  "decode_peak_allocated_mib": [
+    31.4287109375,
+    31.4287109375,
+    31.4287109375
+  ],
+  "decode_peak_reserved_mib": [
+    144.0,
+    144.0,
+    144.0
+  ],
+  "decode_tokens_per_second": [
+    574.9783284828748,
+    599.5644782366039,
+    596.6123122398036
+  ],
+  "median_decode_tokens_per_second": 596.6123122398036,
+  "context_recomputed": true
+}

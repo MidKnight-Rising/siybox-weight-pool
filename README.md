@@ -10,9 +10,13 @@ Can one model keep all its weights available while loading only the experts it n
 
 The flat index reached the same memory peak. Selective expert loading accounts for the measured savings. The cube run shows that Siybox can serve the real weights in the middle of generation and preserve every checked output. Throughput values are from the packaged second run on one GPU. [First and second runs](https://github.com/MidKnight-Rising/siybox-weight-pool/releases/tag/experiment-2026-11-23)
 
+## Standalone follow-up
+
+The original run below used faces as an index into a weight file. The follow-up stores the FP32 values themselves on nested faces and runs the entire checkpoint with an independent executor. Direct GPU arithmetic on face leaves used **36.23 MiB** peak during decode versus **413.46 MiB** resident. The matched flat kernel also used **36.23 MiB**. All 144 tokens matched in both streaming arms. The follow-up also measures the original native Siybox language model against learned attention. [Standalone results, code and reproduction](standalone/README.md)
+
 ## Where the weights go
 
-The packer verifies 313 source tensors and writes all 99,817,344 FP32 parameters to one host-side file (399,269,376 bytes). The Siybox face entries point to byte ranges in that file. Shared weights stay on the GPU. At each of ten layers, the model's own router chooses two of eight experts for a single decode token. The runner looks up the layer, expert and projection on the faces, transfers those weights to the GPU, applies them, and releases them. The same expert can be fetched again on a later token. [Encoder](siybox.py) Â· [Packer and inference code](weight_pool.py) Â· [Face manifest and tensor hashes](POOL_MANIFEST.json)
+The packer verifies 313 source tensors and writes all 99,817,344 FP32 parameters to one host-side file (399,269,376 bytes). The Siybox face entries point to byte ranges in that file. Shared weights stay on the GPU. At each of ten layers, the model's own router chooses two of eight experts for a single decode token. The runner looks up the layer, expert and projection on the faces, transfers those weights to the GPU, applies them, and releases them. The same expert can be fetched again on a later token. [Encoder](siybox.py) Ã‚Â· [Packer and inference code](weight_pool.py) Ã‚Â· [Face manifest and tensor hashes](POOL_MANIFEST.json)
 
 Every single-token decode step fetched 20 of the 80 expert groups. Across the six prompts and their continuations, the run exercised 78 groups. Packing checked all 80. Each prompt produced 24 tokens by greedy generation. The first token comes from processing the prompt, leaving 138 single-token steps for the decode timing. Memory is peak live tensor allocation reported by PyTorch on this workload. Whole-device usage, host RAM, larger checkpoints, dense models and anticipatory weight selection remain open questions.
 

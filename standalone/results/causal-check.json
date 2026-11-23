@@ -1,0 +1,17 @@
+{
+  "prompt": "A copper kettle sat on the stove",
+  "tensor": "lm_head.weight",
+  "output_row": 28725,
+  "weight_column": 0,
+  "tile": 43087,
+  "face_cell": 0,
+  "depth_index": 8,
+  "changed_logit_indices": [
+    28725
+  ],
+  "delta": 1.710799217224121,
+  "logits_checked": 32000,
+  "all_bits_restored": true,
+  "dense_reconstruction_blocked": true,
+  "restored_logits_sha256": "6356df9047065c19112bd1fc0d09c62530eb6de969a1e5e0dd6f224c8679b6f2"
+}

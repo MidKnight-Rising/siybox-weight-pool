@@ -1,0 +1,11 @@
+{
+  "parameters": 99817344,
+  "source_sha256": "feb1cc5a5140f3ec7c357ecb9b13f54b17575d76c792459f563ce061a1527c6a",
+  "tensors_verified_each_layout": 313,
+  "nested_cells_compared_to_siybox_reference": 10016,
+  "full_tensors": 292,
+  "face_weight_files_bytes": 399316664,
+  "flat_weight_files_bytes": 399309440,
+  "face_manifest_bytes": 77241,
+  "flat_manifest_bytes": 70951
+}
