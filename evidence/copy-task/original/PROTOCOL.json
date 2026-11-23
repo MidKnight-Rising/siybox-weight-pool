@@ -1,0 +1,41 @@
+{
+  "status": "predeclared",
+  "arms": [
+    "rules",
+    "directed",
+    "attention3"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "width": 192,
+  "depth": 4,
+  "context": 384,
+  "batch": 16,
+  "steps": 3000,
+  "vocab": 131,
+  "symbols": 128,
+  "padding_id": 130,
+  "train": "Even pattern lengths 16..96; random prefix 0..64 and gap 0..64; random symbols with replacement",
+  "format": "prefix, START, source pattern, SEP, distractors, START, exact copy",
+  "attention_reference": "3 learned heads; width/depth matched; more parameters than fixed relation models",
+  "optimizer": "AdamW default weight decay .01; lr 1e-3, linear 150-step warmup, linear decay to 1e-4; clip 1",
+  "precision": "CUDA float16 autocast and GradScaler, float32 weights",
+  "primary_selection": "Final step only; fixed 512 sequences per case; same training stream per seed across arms",
+  "cases": [
+    "in_distribution",
+    "unseen_lengths",
+    "longer_patterns",
+    "longer_gaps",
+    "unique_source",
+    "dense_collisions"
+  ],
+  "heldout_sha256": "a39d5768688774d5834a341062bcba449c47cc03acc4d8da2af470255303015b",
+  "script_sha256": "9782629f1392f333356d2c288a5d770f95864a4d31eaa2fc99ebbec1027c486c",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "torch": "2.6.0+cu124",
+  "device": "cuda",
+  "gpu": "43.70 W, 126.85 W, 46, 1927 MiB"
+}

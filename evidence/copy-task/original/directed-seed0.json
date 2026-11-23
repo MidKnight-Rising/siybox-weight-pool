@@ -1,0 +1,528 @@
+{
+  "arm": "directed",
+  "seed": 0,
+  "parameters": 1605888,
+  "training_seconds_this_process": 70.23399999993853,
+  "trained_targets": 2692730,
+  "trained_tokens": 8547707,
+  "train_stream_sha256": "895a65647eecc8058e67787d25c09904477dee7e3dc557469491350b6cf25af7",
+  "model_sha256": "5e1fb32443d74866293d40e608a147d4f2efb882bb0f7d5e85afaa5494cc200e",
+  "test": {
+    "in_distribution": {
+      "token_accuracy": 0.9804720725829317,
+      "exact_copy_accuracy": 0.498046875,
+      "hits": 27665,
+      "targets": 28216,
+      "exact_copies": 255,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9999057492931197,
+          "hits": 10609,
+          "targets": 10610
+        },
+        "two_matches": {
+          "accuracy": 0.9973879571075062,
+          "hits": 7255,
+          "targets": 7274
+        },
+        "three_or_more": {
+          "accuracy": 0.9459266802443992,
+          "hits": 9289,
+          "targets": 9820
+        }
+      }
+    },
+    "unseen_lengths": {
+      "token_accuracy": 0.9827167349205247,
+      "exact_copy_accuracy": 0.50390625,
+      "hits": 28316,
+      "targets": 28814,
+      "exact_copies": 258,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9999074759437454,
+          "hits": 10807,
+          "targets": 10808
+        },
+        "two_matches": {
+          "accuracy": 0.9985248759554781,
+          "hits": 7446,
+          "targets": 7457
+        },
+        "three_or_more": {
+          "accuracy": 0.9515791571186609,
+          "hits": 9551,
+          "targets": 10037
+        }
+      }
+    },
+    "longer_patterns": {
+      "token_accuracy": 0.9453369905956113,
+      "exact_copy_accuracy": 0.01953125,
+      "hits": 57900,
+      "targets": 61248,
+      "exact_copies": 10,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9956100915005025,
+          "hits": 18824,
+          "targets": 18907
+        },
+        "two_matches": {
+          "accuracy": 0.990187265917603,
+          "hits": 13219,
+          "targets": 13350
+        },
+        "three_or_more": {
+          "accuracy": 0.8899540011938621,
+          "hits": 25345,
+          "targets": 28479
+        }
+      }
+    },
+    "longer_gaps": {
+      "token_accuracy": 0.9656374501992032,
+      "exact_copy_accuracy": 0.2890625,
+      "hits": 23268,
+      "targets": 24096,
+      "exact_copies": 148,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 1.0,
+          "hits": 4571,
+          "targets": 4571
+        },
+        "two_matches": {
+          "accuracy": 0.9975961538461539,
+          "hits": 6640,
+          "targets": 6656
+        },
+        "three_or_more": {
+          "accuracy": 0.9342882576677187,
+          "hits": 11545,
+          "targets": 12357
+        }
+      }
+    },
+    "unique_source": {
+      "token_accuracy": 1.0,
+      "exact_copy_accuracy": 1.0,
+      "hits": 32128,
+      "targets": 32128,
+      "exact_copies": 512,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 1.0,
+          "hits": 31616,
+          "targets": 31616
+        },
+        "two_matches": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        },
+        "three_or_more": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        }
+      }
+    },
+    "dense_collisions": {
+      "token_accuracy": 0.152191162109375,
+      "exact_copy_accuracy": 0.0,
+      "hits": 4987,
+      "targets": 32768,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        },
+        "two_matches": {
+          "accuracy": 1.0,
+          "hits": 1,
+          "targets": 1
+        },
+        "three_or_more": {
+          "accuracy": 0.1387071771818323,
+          "hits": 4474,
+          "targets": 32255
+        }
+      }
+    }
+  },
+  "checks": {
+    "max_prefix_logit_change": 0.0,
+    "greedy_exact_checks": 2
+  },
+  "progress": [
+    {
+      "step": 100,
+      "loss": 1.7352397441864014,
+      "gradient_norm": 0.6863254904747009,
+      "lr": 0.0006666666666666668,
+      "elapsed_seconds": 2.468000000109896,
+      "targets": 89326,
+      "tokens": 284288,
+      "gpu": "95.36 W, 126.85 W, 57, 2624 MiB"
+    },
+    {
+      "step": 200,
+      "loss": 1.3256478309631348,
+      "gradient_norm": 0.5733121633529663,
+      "lr": 0.0009842105263157895,
+      "elapsed_seconds": 4.875,
+      "targets": 179088,
+      "tokens": 567892,
+      "gpu": "98.33 W, 126.85 W, 57, 2611 MiB"
+    },
+    {
+      "step": 300,
+      "loss": 1.1529587507247925,
+      "gradient_norm": 0.5029926300048828,
+      "lr": 0.0009526315789473684,
+      "elapsed_seconds": 7.218000000109896,
+      "targets": 269196,
+      "tokens": 852505,
+      "gpu": "99.69 W, 126.85 W, 57, 2614 MiB"
+    },
+    {
+      "step": 400,
+      "loss": 0.9410713911056519,
+      "gradient_norm": 0.5782355070114136,
+      "lr": 0.0009210526315789473,
+      "elapsed_seconds": 9.561999999918044,
+      "targets": 357938,
+      "tokens": 1133842,
+      "gpu": "86.70 W, 126.85 W, 58, 2621 MiB"
+    },
+    {
+      "step": 500,
+      "loss": 0.9404268264770508,
+      "gradient_norm": 0.5538917183876038,
+      "lr": 0.0008894736842105263,
+      "elapsed_seconds": 11.905999999959022,
+      "targets": 448058,
+      "tokens": 1417599,
+      "gpu": "98.70 W, 126.85 W, 57, 2613 MiB"
+    },
+    {
+      "step": 600,
+      "loss": 0.8059979677200317,
+      "gradient_norm": 0.5823228359222412,
+      "lr": 0.0008578947368421053,
+      "elapsed_seconds": 14.311999999918044,
+      "targets": 536946,
+      "tokens": 1700648,
+      "gpu": "104.39 W, 126.85 W, 58, 2612 MiB"
+    },
+    {
+      "step": 700,
+      "loss": 0.7454832196235657,
+      "gradient_norm": 0.6299470067024231,
+      "lr": 0.0008263157894736842,
+      "elapsed_seconds": 16.625,
+      "targets": 627626,
+      "tokens": 1988348,
+      "gpu": "98.64 W, 126.85 W, 58, 2611 MiB"
+    },
+    {
+      "step": 800,
+      "loss": 0.6368726491928101,
+      "gradient_norm": 0.7489436268806458,
+      "lr": 0.0007947368421052632,
+      "elapsed_seconds": 18.921000000089407,
+      "targets": 717478,
+      "tokens": 2272333,
+      "gpu": "99.03 W, 126.85 W, 57, 2622 MiB"
+    },
+    {
+      "step": 900,
+      "loss": 0.6125446557998657,
+      "gradient_norm": 0.6064556241035461,
+      "lr": 0.0007631578947368421,
+      "elapsed_seconds": 21.483999999938533,
+      "targets": 806462,
+      "tokens": 2555749,
+      "gpu": "105.33 W, 126.85 W, 59, 2619 MiB"
+    },
+    {
+      "step": 1000,
+      "loss": 0.5897571444511414,
+      "gradient_norm": 0.556114673614502,
+      "lr": 0.0007315789473684211,
+      "elapsed_seconds": 23.70299999997951,
+      "targets": 896806,
+      "tokens": 2841816,
+      "gpu": "85.05 W, 126.85 W, 59, 2610 MiB"
+    },
+    {
+      "step": 1100,
+      "loss": 0.5756466388702393,
+      "gradient_norm": 0.7305708527565002,
+      "lr": 0.0007,
+      "elapsed_seconds": 25.936999999918044,
+      "targets": 987744,
+      "tokens": 3128437,
+      "gpu": "102.31 W, 126.85 W, 58, 2603 MiB"
+    },
+    {
+      "step": 1200,
+      "loss": 0.5578298568725586,
+      "gradient_norm": 0.7592620253562927,
+      "lr": 0.000668421052631579,
+      "elapsed_seconds": 28.108999999938533,
+      "targets": 1078936,
+      "tokens": 3416793,
+      "gpu": "103.94 W, 126.85 W, 58, 2590 MiB"
+    },
+    {
+      "step": 1300,
+      "loss": 0.4125317633152008,
+      "gradient_norm": 0.9081839323043823,
+      "lr": 0.000636842105263158,
+      "elapsed_seconds": 30.280999999959022,
+      "targets": 1167448,
+      "tokens": 3699897,
+      "gpu": "108.54 W, 126.85 W, 59, 2590 MiB"
+    },
+    {
+      "step": 1400,
+      "loss": 0.31806084513664246,
+      "gradient_norm": 1.1830787658691406,
+      "lr": 0.0006052631578947369,
+      "elapsed_seconds": 32.436999999918044,
+      "targets": 1255158,
+      "tokens": 3981073,
+      "gpu": "95.11 W, 126.85 W, 59, 2586 MiB"
+    },
+    {
+      "step": 1500,
+      "loss": 0.21799275279045105,
+      "gradient_norm": 1.2152636051177979,
+      "lr": 0.0005736842105263158,
+      "elapsed_seconds": 34.65599999995902,
+      "targets": 1344280,
+      "tokens": 4265152,
+      "gpu": "96.13 W, 126.85 W, 59, 2580 MiB"
+    },
+    {
+      "step": 1600,
+      "loss": 0.24719037115573883,
+      "gradient_norm": 0.7530778646469116,
+      "lr": 0.0005421052631578948,
+      "elapsed_seconds": 36.98399999993853,
+      "targets": 1434720,
+      "tokens": 4550786,
+      "gpu": "99.14 W, 126.85 W, 59, 2587 MiB"
+    },
+    {
+      "step": 1700,
+      "loss": 0.19265083968639374,
+      "gradient_norm": 1.073144555091858,
+      "lr": 0.0005105263157894736,
+      "elapsed_seconds": 39.17100000008941,
+      "targets": 1524184,
+      "tokens": 4837215,
+      "gpu": "96.93 W, 126.85 W, 59, 2581 MiB"
+    },
+    {
+      "step": 1800,
+      "loss": 0.1885702908039093,
+      "gradient_norm": 0.837287187576294,
+      "lr": 0.00047894736842105264,
+      "elapsed_seconds": 41.375,
+      "targets": 1612838,
+      "tokens": 5119877,
+      "gpu": "96.13 W, 126.85 W, 59, 2599 MiB"
+    },
+    {
+      "step": 1900,
+      "loss": 0.15115007758140564,
+      "gradient_norm": 0.7202399373054504,
+      "lr": 0.0004473684210526316,
+      "elapsed_seconds": 43.718000000109896,
+      "targets": 1705384,
+      "tokens": 5410297,
+      "gpu": "102.64 W, 126.85 W, 59, 2587 MiB"
+    },
+    {
+      "step": 2000,
+      "loss": 0.07702130079269409,
+      "gradient_norm": 0.4343602657318115,
+      "lr": 0.0004157894736842105,
+      "elapsed_seconds": 46.10899999993853,
+      "targets": 1797556,
+      "tokens": 5701930,
+      "gpu": "99.90 W, 126.85 W, 59, 2587 MiB"
+    },
+    {
+      "step": 2100,
+      "loss": 0.16102105379104614,
+      "gradient_norm": 0.9507002830505371,
+      "lr": 0.00038421052631578946,
+      "elapsed_seconds": 48.561999999918044,
+      "targets": 1886584,
+      "tokens": 5984975,
+      "gpu": "98.98 W, 126.85 W, 59, 2584 MiB"
+    },
+    {
+      "step": 2200,
+      "loss": 0.11797403544187546,
+      "gradient_norm": 0.5928278565406799,
+      "lr": 0.0003526315789473684,
+      "elapsed_seconds": 50.90599999995902,
+      "targets": 1974598,
+      "tokens": 6267276,
+      "gpu": "87.06 W, 126.85 W, 59, 2579 MiB"
+    },
+    {
+      "step": 2300,
+      "loss": 0.07499441504478455,
+      "gradient_norm": 0.5634910464286804,
+      "lr": 0.0003210526315789474,
+      "elapsed_seconds": 53.25,
+      "targets": 2063076,
+      "tokens": 6550317,
+      "gpu": "100.55 W, 126.85 W, 59, 2584 MiB"
+    },
+    {
+      "step": 2400,
+      "loss": 0.08440177887678146,
+      "gradient_norm": 0.6335662603378296,
+      "lr": 0.00028947368421052634,
+      "elapsed_seconds": 55.78099999995902,
+      "targets": 2153562,
+      "tokens": 6836195,
+      "gpu": "99.72 W, 126.85 W, 59, 2586 MiB"
+    },
+    {
+      "step": 2500,
+      "loss": 0.12482096999883652,
+      "gradient_norm": 0.8953116536140442,
+      "lr": 0.0002578947368421053,
+      "elapsed_seconds": 58.57799999997951,
+      "targets": 2243086,
+      "tokens": 7122978,
+      "gpu": "93.73 W, 126.85 W, 60, 2584 MiB"
+    },
+    {
+      "step": 2600,
+      "loss": 0.09112293273210526,
+      "gradient_norm": 0.7853555083274841,
+      "lr": 0.00022631578947368422,
+      "elapsed_seconds": 60.875,
+      "targets": 2333460,
+      "tokens": 7408790,
+      "gpu": "104.59 W, 126.85 W, 59, 2576 MiB"
+    },
+    {
+      "step": 2700,
+      "loss": 0.045739248394966125,
+      "gradient_norm": 0.5103493332862854,
+      "lr": 0.00019473684210526317,
+      "elapsed_seconds": 63.125,
+      "targets": 2422564,
+      "tokens": 7691806,
+      "gpu": "103.65 W, 126.85 W, 59, 2577 MiB"
+    },
+    {
+      "step": 2800,
+      "loss": 0.07541614025831223,
+      "gradient_norm": 0.6855176687240601,
+      "lr": 0.0001631578947368421,
+      "elapsed_seconds": 65.48399999993853,
+      "targets": 2511824,
+      "tokens": 7974794,
+      "gpu": "99.22 W, 126.85 W, 60, 2596 MiB"
+    },
+    {
+      "step": 2900,
+      "loss": 0.11771567165851593,
+      "gradient_norm": 1.028189778327942,
+      "lr": 0.00013157894736842105,
+      "elapsed_seconds": 67.90599999995902,
+      "targets": 2603574,
+      "tokens": 8264476,
+      "gpu": "100.82 W, 126.85 W, 59, 2600 MiB"
+    },
+    {
+      "step": 3000,
+      "loss": 0.04908297210931778,
+      "gradient_norm": 1.28390371799469,
+      "lr": 0.0001,
+      "elapsed_seconds": 70.125,
+      "targets": 2692730,
+      "tokens": 8547707,
+      "gpu": "101.35 W, 126.85 W, 59, 2600 MiB"
+    }
+  ],
+  "successor_zeroed": {
+    "token_accuracy": 0.008364048766657216,
+    "exact_copy_accuracy": 0.0,
+    "hits": 236,
+    "targets": 28216,
+    "exact_copies": 0,
+    "sequences": 512,
+    "by_match_count": {
+      "first": {
+        "accuracy": 0.001953125,
+        "hits": 1,
+        "targets": 512
+      },
+      "one_match": {
+        "accuracy": 0.005560791705937794,
+        "hits": 59,
+        "targets": 10610
+      },
+      "two_matches": {
+        "accuracy": 0.00962331591971405,
+        "hits": 70,
+        "targets": 7274
+      },
+      "three_or_more": {
+        "accuracy": 0.010794297352342158,
+        "hits": 106,
+        "targets": 9820
+      }
+    }
+  }
+}

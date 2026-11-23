@@ -1,0 +1,110 @@
+{
+  "corpus_tokens": 84088239,
+  "paragraph_layers": 858861,
+  "arms": {
+    "w2v_cbow": {
+      "WS353": {
+        "rho_all_covered": 0.6516,
+        "coverage": 1.0,
+        "rho_common": 0.6516,
+        "n_common": 353
+      },
+      "SimLex999": {
+        "rho_all_covered": 0.3336,
+        "coverage": 1.0,
+        "rho_common": 0.3336,
+        "n_common": 999
+      },
+      "MEN": {
+        "rho_all_covered": 0.6426,
+        "coverage": 1.0,
+        "rho_common": 0.6426,
+        "n_common": 3000
+      },
+      "RG65": {
+        "rho_all_covered": 0.642,
+        "coverage": 1.0,
+        "rho_common": 0.642,
+        "n_common": 65
+      },
+      "RW2034": {
+        "rho_all_covered": 0.3444,
+        "coverage": 0.8953,
+        "rho_common": 0.3643,
+        "n_common": 1702
+      }
+    },
+    "w2v_skipgram": {
+      "WS353": {
+        "rho_all_covered": 0.6729,
+        "coverage": 1.0,
+        "rho_common": 0.6729,
+        "n_common": 353
+      },
+      "SimLex999": {
+        "rho_all_covered": 0.3592,
+        "coverage": 1.0,
+        "rho_common": 0.3592,
+        "n_common": 999
+      },
+      "MEN": {
+        "rho_all_covered": 0.6931,
+        "coverage": 1.0,
+        "rho_common": 0.6931,
+        "n_common": 3000
+      },
+      "RG65": {
+        "rho_all_covered": 0.7352,
+        "coverage": 1.0,
+        "rho_common": 0.7352,
+        "n_common": 65
+      },
+      "RW2034": {
+        "rho_all_covered": 0.3593,
+        "coverage": 0.8953,
+        "rho_common": 0.3603,
+        "n_common": 1702
+      }
+    },
+    "glove300_6B": {
+      "WS353": {
+        "rho_all_covered": 0.6085,
+        "coverage": 1.0,
+        "rho_common": 0.6085,
+        "n_common": 353
+      },
+      "SimLex999": {
+        "rho_all_covered": 0.3705,
+        "coverage": 1.0,
+        "rho_common": 0.3705,
+        "n_common": 999
+      },
+      "MEN": {
+        "rho_all_covered": 0.7375,
+        "coverage": 1.0,
+        "rho_common": 0.7375,
+        "n_common": 3000
+      },
+      "RG65": {
+        "rho_all_covered": 0.7662,
+        "coverage": 1.0,
+        "rho_common": 0.7662,
+        "n_common": 65
+      },
+      "RW2034": {
+        "rho_all_covered": 0.4118,
+        "coverage": 0.8761,
+        "rho_common": 0.4084,
+        "n_common": 1702
+      }
+    }
+  },
+  "layer_list_reference_recursion_D10_depth2": {
+    "WS353": 0.674,
+    "SimLex999": 0.241,
+    "MEN": 0.624,
+    "RG65": 0.651,
+    "RW2034": 0.138,
+    "source": "field_learning_lab/bench_data/recursion_D10.txt; reproduced 0.674327 on 9/15, 9/20, 10/11, 10/13"
+  }
+}

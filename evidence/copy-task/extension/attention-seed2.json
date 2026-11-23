@@ -1,0 +1,449 @@
+{
+  "seed": 2,
+  "total_steps": 12000,
+  "trained_targets": 10728738,
+  "trained_tokens": 34126069,
+  "original_resume_sha256": "b53485859a5380c22547b2b83e511e3a5ce747d389148611783c3db2381b5e57",
+  "model_sha256": "88c6021f477b761eda7f2c1a14dbddea09b0fbdfc28df2216c072cb99630422a",
+  "training_seconds_this_process": 291.6455697600031,
+  "test": {
+    "in_distribution": {
+      "token_accuracy": 0.9842996881202155,
+      "exact_copy_accuracy": 0.490234375,
+      "hits": 27773,
+      "targets": 28216,
+      "exact_copies": 251,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9996229971724788,
+          "hits": 10606,
+          "targets": 10610
+        },
+        "two_matches": {
+          "accuracy": 0.9891394006048941,
+          "hits": 7195,
+          "targets": 7274
+        },
+        "three_or_more": {
+          "accuracy": 0.9633401221995926,
+          "hits": 9460,
+          "targets": 9820
+        }
+      }
+    },
+    "unseen_lengths": {
+      "token_accuracy": 0.9841743596862637,
+      "exact_copy_accuracy": 0.466796875,
+      "hits": 28358,
+      "targets": 28814,
+      "exact_copies": 239,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9993523316062176,
+          "hits": 10801,
+          "targets": 10808
+        },
+        "two_matches": {
+          "accuracy": 0.9899423360600778,
+          "hits": 7382,
+          "targets": 7457
+        },
+        "three_or_more": {
+          "accuracy": 0.9627378698814387,
+          "hits": 9663,
+          "targets": 10037
+        }
+      }
+    },
+    "longer_patterns": {
+      "token_accuracy": 0.938985762800418,
+      "exact_copy_accuracy": 0.021484375,
+      "hits": 57511,
+      "targets": 61248,
+      "exact_copies": 11,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9730787539006717,
+          "hits": 18398,
+          "targets": 18907
+        },
+        "two_matches": {
+          "accuracy": 0.9553558052434457,
+          "hits": 12754,
+          "targets": 13350
+        },
+        "three_or_more": {
+          "accuracy": 0.9075810246146283,
+          "hits": 25847,
+          "targets": 28479
+        }
+      }
+    },
+    "longer_gaps": {
+      "token_accuracy": 0.8946713147410359,
+      "exact_copy_accuracy": 0.294921875,
+      "hits": 21558,
+      "targets": 24096,
+      "exact_copies": 151,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.99609375,
+          "hits": 510,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9098665499890615,
+          "hits": 4159,
+          "targets": 4571
+        },
+        "two_matches": {
+          "accuracy": 0.9012920673076923,
+          "hits": 5999,
+          "targets": 6656
+        },
+        "three_or_more": {
+          "accuracy": 0.8812818645302258,
+          "hits": 10890,
+          "targets": 12357
+        }
+      }
+    },
+    "unique_source": {
+      "token_accuracy": 0.9996887450199203,
+      "exact_copy_accuracy": 0.98046875,
+      "hits": 32118,
+      "targets": 32128,
+      "exact_copies": 502,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.998046875,
+          "hits": 511,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.9997153340080972,
+          "hits": 31607,
+          "targets": 31616
+        },
+        "two_matches": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        },
+        "three_or_more": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        }
+      }
+    },
+    "dense_collisions": {
+      "token_accuracy": 0.883636474609375,
+      "exact_copy_accuracy": 0.0,
+      "hits": 28955,
+      "targets": 32768,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 1.0,
+          "hits": 512,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        },
+        "two_matches": {
+          "accuracy": 1.0,
+          "hits": 1,
+          "targets": 1
+        },
+        "three_or_more": {
+          "accuracy": 0.8817857696481166,
+          "hits": 28442,
+          "targets": 32255
+        }
+      }
+    }
+  },
+  "checks": {
+    "max_prefix_logit_change": 0.0,
+    "greedy_exact_checks": 2
+  },
+  "progress": [
+    {
+      "step": 3500,
+      "loss": 4.795405864715576,
+      "gradient_norm": 0.33459052443504333,
+      "targets": 3124256,
+      "tokens": 9955206,
+      "elapsed_seconds": 17.735153550005634,
+      "gpu": "113.12 W, 180.00 W, 56.30, 1963 MiB"
+    },
+    {
+      "step": 4000,
+      "loss": 4.7585530281066895,
+      "gradient_norm": 0.2909124195575714,
+      "targets": 3569756,
+      "tokens": 11374733,
+      "elapsed_seconds": 36.994862348001334,
+      "gpu": "96.34 W, 180.00 W, 57.50, 1957 MiB"
+    },
+    {
+      "step": 4500,
+      "loss": 4.746520519256592,
+      "gradient_norm": 0.28577542304992676,
+      "targets": 4018102,
+      "tokens": 12801748,
+      "elapsed_seconds": 52.700678438995965,
+      "gpu": "126.10 W, 180.00 W, 62.90, 1954 MiB"
+    },
+    {
+      "step": 5000,
+      "loss": 4.718075275421143,
+      "gradient_norm": 0.2858927249908447,
+      "targets": 4468276,
+      "tokens": 14228201,
+      "elapsed_seconds": 66.8151334389986,
+      "gpu": "116.48 W, 180.00 W, 64.80, 1951 MiB"
+    },
+    {
+      "step": 5500,
+      "loss": 4.600008964538574,
+      "gradient_norm": 0.4125494658946991,
+      "targets": 4915138,
+      "tokens": 15649237,
+      "elapsed_seconds": 82.9198804149928,
+      "gpu": "121.92 W, 180.00 W, 65.80, 1951 MiB"
+    },
+    {
+      "step": 6000,
+      "loss": 2.1687140464782715,
+      "gradient_norm": 3.2751243114471436,
+      "targets": 5356884,
+      "tokens": 17056442,
+      "elapsed_seconds": 98.81757193400699,
+      "gpu": "129.81 W, 180.00 W, 67.60, 1951 MiB",
+      "validation": {
+        "token_accuracy": 0.6402286032896571,
+        "exact_copy_accuracy": 0.0078125,
+        "hits": 4593,
+        "targets": 7174,
+        "exact_copies": 1,
+        "sequences": 128,
+        "by_match_count": {
+          "first": {
+            "accuracy": 0.984375,
+            "hits": 126,
+            "targets": 128
+          },
+          "one_match": {
+            "accuracy": 0.731245166279969,
+            "hits": 1891,
+            "targets": 2586
+          },
+          "two_matches": {
+            "accuracy": 0.6770833333333334,
+            "hits": 1300,
+            "targets": 1920
+          },
+          "three_or_more": {
+            "accuracy": 0.5023622047244094,
+            "hits": 1276,
+            "targets": 2540
+          }
+        }
+      }
+    },
+    {
+      "step": 6500,
+      "loss": 0.6883244514465332,
+      "gradient_norm": 6.099703311920166,
+      "targets": 5802034,
+      "tokens": 18470874,
+      "elapsed_seconds": 116.94906842500495,
+      "gpu": "76.84 W, 180.00 W, 64.70, 1954 MiB"
+    },
+    {
+      "step": 7000,
+      "loss": 0.15986409783363342,
+      "gradient_norm": 3.3633005619049072,
+      "targets": 6252410,
+      "tokens": 19900962,
+      "elapsed_seconds": 134.20804913100437,
+      "gpu": "127.51 W, 180.00 W, 69.00, 1946 MiB"
+    },
+    {
+      "step": 7500,
+      "loss": 0.1321006566286087,
+      "gradient_norm": 2.2369163036346436,
+      "targets": 6695798,
+      "tokens": 21314679,
+      "elapsed_seconds": 148.87604011299845,
+      "gpu": "119.90 W, 180.00 W, 69.20, 1955 MiB"
+    },
+    {
+      "step": 8000,
+      "loss": 0.09169770032167435,
+      "gradient_norm": 1.8406009674072266,
+      "targets": 7143286,
+      "tokens": 22736480,
+      "elapsed_seconds": 164.4047819749976,
+      "gpu": "122.44 W, 180.00 W, 69.50, 1950 MiB"
+    },
+    {
+      "step": 8500,
+      "loss": 0.13271087408065796,
+      "gradient_norm": 1.6594282388687134,
+      "targets": 7590340,
+      "tokens": 24159777,
+      "elapsed_seconds": 180.16919633600628,
+      "gpu": "128.42 W, 180.00 W, 70.40, 1951 MiB"
+    },
+    {
+      "step": 9000,
+      "loss": 0.09785521030426025,
+      "gradient_norm": 2.4014627933502197,
+      "targets": 8039052,
+      "tokens": 25583908,
+      "elapsed_seconds": 195.7574958269979,
+      "gpu": "124.04 W, 180.00 W, 70.50, 1946 MiB",
+      "validation": {
+        "token_accuracy": 0.9776972400334542,
+        "exact_copy_accuracy": 0.4296875,
+        "hits": 7014,
+        "targets": 7174,
+        "exact_copies": 55,
+        "sequences": 128,
+        "by_match_count": {
+          "first": {
+            "accuracy": 0.984375,
+            "hits": 126,
+            "targets": 128
+          },
+          "one_match": {
+            "accuracy": 0.9988399071925754,
+            "hits": 2583,
+            "targets": 2586
+          },
+          "two_matches": {
+            "accuracy": 0.984375,
+            "hits": 1890,
+            "targets": 1920
+          },
+          "three_or_more": {
+            "accuracy": 0.9507874015748031,
+            "hits": 2415,
+            "targets": 2540
+          }
+        }
+      }
+    },
+    {
+      "step": 9500,
+      "loss": 0.07195289433002472,
+      "gradient_norm": 0.6180447340011597,
+      "targets": 8485454,
+      "tokens": 27003898,
+      "elapsed_seconds": 212.14392431300075,
+      "gpu": "121.43 W, 180.00 W, 71.10, 1954 MiB"
+    },
+    {
+      "step": 10000,
+      "loss": 0.10582432150840759,
+      "gradient_norm": 0.8092096447944641,
+      "targets": 8934728,
+      "tokens": 28427583,
+      "elapsed_seconds": 227.6512211740046,
+      "gpu": "122.30 W, 180.00 W, 71.30, 1955 MiB"
+    },
+    {
+      "step": 10500,
+      "loss": 0.0531415157020092,
+      "gradient_norm": 0.9923960566520691,
+      "targets": 9382924,
+      "tokens": 29854780,
+      "elapsed_seconds": 242.53366626899515,
+      "gpu": "129.55 W, 180.00 W, 71.40, 1954 MiB"
+    },
+    {
+      "step": 11000,
+      "loss": 0.06060386076569557,
+      "gradient_norm": 1.6318100690841675,
+      "targets": 9831262,
+      "tokens": 31277849,
+      "elapsed_seconds": 257.06069786699663,
+      "gpu": "127.81 W, 180.00 W, 71.60, 1950 MiB"
+    },
+    {
+      "step": 11500,
+      "loss": 0.09613243490457535,
+      "gradient_norm": 2.535813808441162,
+      "targets": 10277504,
+      "tokens": 32696875,
+      "elapsed_seconds": 272.7030071360059,
+      "gpu": "106.41 W, 180.00 W, 69.80, 1951 MiB"
+    },
+    {
+      "step": 12000,
+      "loss": 0.03080078959465027,
+      "gradient_norm": 0.28335079550743103,
+      "targets": 10728738,
+      "tokens": 34126069,
+      "elapsed_seconds": 291.3744408710045,
+      "gpu": "70.07 W, 180.00 W, 63.30, 1451 MiB",
+      "validation": {
+        "token_accuracy": 0.9849456370225815,
+        "exact_copy_accuracy": 0.4921875,
+        "hits": 7066,
+        "targets": 7174,
+        "exact_copies": 63,
+        "sequences": 128,
+        "by_match_count": {
+          "first": {
+            "accuracy": 1.0,
+            "hits": 128,
+            "targets": 128
+          },
+          "one_match": {
+            "accuracy": 0.9992266047950503,
+            "hits": 2584,
+            "targets": 2586
+          },
+          "two_matches": {
+            "accuracy": 0.9911458333333333,
+            "hits": 1903,
+            "targets": 1920
+          },
+          "three_or_more": {
+            "accuracy": 0.9649606299212599,
+            "hits": 2451,
+            "targets": 2540
+          }
+        }
+      }
+    }
+  ]
+}

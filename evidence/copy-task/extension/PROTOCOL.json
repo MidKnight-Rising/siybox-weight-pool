@@ -1,0 +1,29 @@
+{
+  "purpose": "Check learned-attention implementation, then test whether original shared budget prevented learning.",
+  "fixed_control": {
+    "steps": 400,
+    "seed": 0,
+    "pattern_length": 12,
+    "prefix": 0,
+    "gap": 0,
+    "symbols": 128,
+    "model": "same 3-head attention, width 192 depth 4",
+    "lr": 0.001
+  },
+  "extension": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "original_steps": 3000,
+    "final_steps": 12000,
+    "additional_steps": 9000,
+    "lr": 0.001,
+    "initial_state": "original final model + AdamW + scaler + training RNG",
+    "primary": "final checkpoint on original frozen held-out sets",
+    "validation": "independent 128 sequences at total steps 6000/9000/12000; no checkpoint selection"
+  },
+  "source_sha256": "21829c624dc212c458357d9cc3afeef4416c0d92c07857d72518e78842cbd4b3",
+  "interpretation": "A separate larger-budget control; not part of the equal-budget comparison."
+}

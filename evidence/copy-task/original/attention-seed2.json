@@ -1,0 +1,498 @@
+{
+  "arm": "attention3",
+  "seed": 2,
+  "parameters": 1900800,
+  "training_seconds_this_process": 58.54700000002049,
+  "trained_targets": 2679322,
+  "trained_tokens": 8535812,
+  "train_stream_sha256": "c84dd6d556e80701ad8d843d1fa881c65e3415004535a85e9dc26c28b721ff2d",
+  "model_sha256": "adff9145c264258717747115cd73e225e703bad0872d4f4fb8538b8605ba1106",
+  "test": {
+    "in_distribution": {
+      "token_accuracy": 0.0311170966827332,
+      "exact_copy_accuracy": 0.0,
+      "hits": 878,
+      "targets": 28216,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.044921875,
+          "hits": 23,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.03223374175306315,
+          "hits": 342,
+          "targets": 10610
+        },
+        "two_matches": {
+          "accuracy": 0.03079461094308496,
+          "hits": 224,
+          "targets": 7274
+        },
+        "three_or_more": {
+          "accuracy": 0.029429735234215885,
+          "hits": 289,
+          "targets": 9820
+        }
+      }
+    },
+    "unseen_lengths": {
+      "token_accuracy": 0.030575414728951204,
+      "exact_copy_accuracy": 0.0,
+      "hits": 881,
+      "targets": 28814,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.041015625,
+          "hits": 21,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.03090303478904515,
+          "hits": 334,
+          "targets": 10808
+        },
+        "two_matches": {
+          "accuracy": 0.03231862679361674,
+          "hits": 241,
+          "targets": 7457
+        },
+        "three_or_more": {
+          "accuracy": 0.02839493872671117,
+          "hits": 285,
+          "targets": 10037
+        }
+      }
+    },
+    "longer_patterns": {
+      "token_accuracy": 0.021796630094043888,
+      "exact_copy_accuracy": 0.0,
+      "hits": 1335,
+      "targets": 61248,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.044921875,
+          "hits": 23,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.022690008991378855,
+          "hits": 429,
+          "targets": 18907
+        },
+        "two_matches": {
+          "accuracy": 0.022172284644194757,
+          "hits": 296,
+          "targets": 13350
+        },
+        "three_or_more": {
+          "accuracy": 0.02061167878085607,
+          "hits": 587,
+          "targets": 28479
+        }
+      }
+    },
+    "longer_gaps": {
+      "token_accuracy": 0.027348937583001328,
+      "exact_copy_accuracy": 0.0,
+      "hits": 659,
+      "targets": 24096,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.03515625,
+          "hits": 18,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.02734631371691096,
+          "hits": 125,
+          "targets": 4571
+        },
+        "two_matches": {
+          "accuracy": 0.026592548076923076,
+          "hits": 177,
+          "targets": 6656
+        },
+        "three_or_more": {
+          "accuracy": 0.027433843165816946,
+          "hits": 339,
+          "targets": 12357
+        }
+      }
+    },
+    "unique_source": {
+      "token_accuracy": 0.026145418326693228,
+      "exact_copy_accuracy": 0.0,
+      "hits": 840,
+      "targets": 32128,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.033203125,
+          "hits": 17,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": 0.026031123481781375,
+          "hits": 823,
+          "targets": 31616
+        },
+        "two_matches": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        },
+        "three_or_more": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        }
+      }
+    },
+    "dense_collisions": {
+      "token_accuracy": 0.033416748046875,
+      "exact_copy_accuracy": 0.0,
+      "hits": 1095,
+      "targets": 32768,
+      "exact_copies": 0,
+      "sequences": 512,
+      "by_match_count": {
+        "first": {
+          "accuracy": 0.02734375,
+          "hits": 14,
+          "targets": 512
+        },
+        "one_match": {
+          "accuracy": null,
+          "hits": 0,
+          "targets": 0
+        },
+        "two_matches": {
+          "accuracy": 0.0,
+          "hits": 0,
+          "targets": 1
+        },
+        "three_or_more": {
+          "accuracy": 0.03351418384746551,
+          "hits": 1081,
+          "targets": 32255
+        }
+      }
+    }
+  },
+  "checks": {
+    "max_prefix_logit_change": 0.0,
+    "greedy_exact_checks": 2
+  },
+  "progress": [
+    {
+      "step": 100,
+      "loss": 4.854729652404785,
+      "gradient_norm": 0.5779192447662354,
+      "lr": 0.0006666666666666668,
+      "elapsed_seconds": 1.6869999999180436,
+      "targets": 89456,
+      "tokens": 285971,
+      "gpu": "105.97 W, 126.85 W, 60, 2544 MiB"
+    },
+    {
+      "step": 200,
+      "loss": 4.875840663909912,
+      "gradient_norm": 0.55723637342453,
+      "lr": 0.0009842105263157895,
+      "elapsed_seconds": 3.4369999999180436,
+      "targets": 177844,
+      "tokens": 569237,
+      "gpu": "105.11 W, 126.85 W, 61, 2544 MiB"
+    },
+    {
+      "step": 300,
+      "loss": 4.869725704193115,
+      "gradient_norm": 0.5158095359802246,
+      "lr": 0.0009526315789473684,
+      "elapsed_seconds": 5.186999999918044,
+      "targets": 267954,
+      "tokens": 854015,
+      "gpu": "103.87 W, 126.85 W, 61, 2544 MiB"
+    },
+    {
+      "step": 400,
+      "loss": 4.866270065307617,
+      "gradient_norm": 0.42075738310813904,
+      "lr": 0.0009210526315789473,
+      "elapsed_seconds": 6.936999999918044,
+      "targets": 356314,
+      "tokens": 1138530,
+      "gpu": "104.95 W, 126.85 W, 60, 2544 MiB"
+    },
+    {
+      "step": 500,
+      "loss": 4.862543106079102,
+      "gradient_norm": 0.4856438636779785,
+      "lr": 0.0008894736842105263,
+      "elapsed_seconds": 8.672000000020489,
+      "targets": 446492,
+      "tokens": 1425010,
+      "gpu": "92.48 W, 126.85 W, 60, 2544 MiB"
+    },
+    {
+      "step": 600,
+      "loss": 4.855993747711182,
+      "gradient_norm": 0.33728402853012085,
+      "lr": 0.0008578947368421053,
+      "elapsed_seconds": 10.436999999918044,
+      "targets": 536368,
+      "tokens": 1709042,
+      "gpu": "106.98 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 700,
+      "loss": 4.850493431091309,
+      "gradient_norm": 0.4334806501865387,
+      "lr": 0.0008263157894736842,
+      "elapsed_seconds": 12.172000000020489,
+      "targets": 625714,
+      "tokens": 1994652,
+      "gpu": "86.18 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 800,
+      "loss": 4.855894565582275,
+      "gradient_norm": 0.400070458650589,
+      "lr": 0.0007947368421052632,
+      "elapsed_seconds": 14.311999999918044,
+      "targets": 714400,
+      "tokens": 2277967,
+      "gpu": "105.36 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 900,
+      "loss": 4.847427845001221,
+      "gradient_norm": 0.43152865767478943,
+      "lr": 0.0007631578947368421,
+      "elapsed_seconds": 16.061999999918044,
+      "targets": 802688,
+      "tokens": 2560316,
+      "gpu": "61.88 W, 126.85 W, 58, 2543 MiB"
+    },
+    {
+      "step": 1000,
+      "loss": 4.847107410430908,
+      "gradient_norm": 0.405215859413147,
+      "lr": 0.0007315789473684211,
+      "elapsed_seconds": 19.375,
+      "targets": 891144,
+      "tokens": 2844998,
+      "gpu": "106.45 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 1100,
+      "loss": 4.8376383781433105,
+      "gradient_norm": 0.37909576296806335,
+      "lr": 0.0007,
+      "elapsed_seconds": 21.265000000130385,
+      "targets": 981648,
+      "tokens": 3131246,
+      "gpu": "104.77 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 1200,
+      "loss": 4.837930679321289,
+      "gradient_norm": 0.4096304774284363,
+      "lr": 0.000668421052631579,
+      "elapsed_seconds": 22.983999999938533,
+      "targets": 1070590,
+      "tokens": 3416739,
+      "gpu": "108.01 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 1300,
+      "loss": 4.830530166625977,
+      "gradient_norm": 0.3739202320575714,
+      "lr": 0.000636842105263158,
+      "elapsed_seconds": 24.718000000109896,
+      "targets": 1158472,
+      "tokens": 3697532,
+      "gpu": "86.69 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 1400,
+      "loss": 4.825488090515137,
+      "gradient_norm": 0.3739096224308014,
+      "lr": 0.0006052631578947369,
+      "elapsed_seconds": 26.5,
+      "targets": 1247884,
+      "tokens": 3981955,
+      "gpu": "103.66 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 1500,
+      "loss": 4.827953815460205,
+      "gradient_norm": 0.38158118724823,
+      "lr": 0.0005736842105263158,
+      "elapsed_seconds": 28.25,
+      "targets": 1337358,
+      "tokens": 4266561,
+      "gpu": "56.66 W, 126.85 W, 57, 2543 MiB"
+    },
+    {
+      "step": 1600,
+      "loss": 4.813861846923828,
+      "gradient_norm": 0.3841223418712616,
+      "lr": 0.0005421052631578948,
+      "elapsed_seconds": 32.218000000109896,
+      "targets": 1426306,
+      "tokens": 4550002,
+      "gpu": "99.60 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 1700,
+      "loss": 4.822343826293945,
+      "gradient_norm": 0.36335331201553345,
+      "lr": 0.0005105263157894736,
+      "elapsed_seconds": 34.343000000109896,
+      "targets": 1515648,
+      "tokens": 4833762,
+      "gpu": "99.71 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 1800,
+      "loss": 4.819688320159912,
+      "gradient_norm": 0.3934779465198517,
+      "lr": 0.00047894736842105264,
+      "elapsed_seconds": 36.265000000130385,
+      "targets": 1602704,
+      "tokens": 5114497,
+      "gpu": "90.50 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 1900,
+      "loss": 4.820926189422607,
+      "gradient_norm": 0.33746862411499023,
+      "lr": 0.0004473684210526316,
+      "elapsed_seconds": 38.125,
+      "targets": 1692782,
+      "tokens": 5399044,
+      "gpu": "102.98 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 2000,
+      "loss": 4.813247203826904,
+      "gradient_norm": 0.3701469898223877,
+      "lr": 0.0004157894736842105,
+      "elapsed_seconds": 40.10899999993853,
+      "targets": 1780722,
+      "tokens": 5679361,
+      "gpu": "92.73 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 2100,
+      "loss": 4.821094989776611,
+      "gradient_norm": 0.3238771855831146,
+      "lr": 0.00038421052631578946,
+      "elapsed_seconds": 41.92200000002049,
+      "targets": 1869686,
+      "tokens": 5964480,
+      "gpu": "101.05 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 2200,
+      "loss": 4.807535648345947,
+      "gradient_norm": 0.37878450751304626,
+      "lr": 0.0003526315789473684,
+      "elapsed_seconds": 43.686999999918044,
+      "targets": 1958006,
+      "tokens": 6246057,
+      "gpu": "105.83 W, 126.85 W, 60, 2543 MiB"
+    },
+    {
+      "step": 2300,
+      "loss": 4.814396858215332,
+      "gradient_norm": 0.32974040508270264,
+      "lr": 0.0003210526315789474,
+      "elapsed_seconds": 45.42200000002049,
+      "targets": 2049286,
+      "tokens": 6534219,
+      "gpu": "99.38 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 2400,
+      "loss": 4.8031840324401855,
+      "gradient_norm": 0.3721187710762024,
+      "lr": 0.00028947368421052634,
+      "elapsed_seconds": 47.15599999995902,
+      "targets": 2139566,
+      "tokens": 6819199,
+      "gpu": "107.93 W, 126.85 W, 61, 2543 MiB"
+    },
+    {
+      "step": 2500,
+      "loss": 4.806790351867676,
+      "gradient_norm": 0.35843390226364136,
+      "lr": 0.0002578947368421053,
+      "elapsed_seconds": 48.90599999995902,
+      "targets": 2227886,
+      "tokens": 7102388,
+      "gpu": "107.77 W, 126.85 W, 60, 2542 MiB"
+    },
+    {
+      "step": 2600,
+      "loss": 4.799586772918701,
+      "gradient_norm": 0.3650980293750763,
+      "lr": 0.00022631578947368422,
+      "elapsed_seconds": 51.140000000130385,
+      "targets": 2318118,
+      "tokens": 7388486,
+      "gpu": "95.83 W, 126.85 W, 61, 2542 MiB"
+    },
+    {
+      "step": 2700,
+      "loss": 4.79088830947876,
+      "gradient_norm": 0.33675551414489746,
+      "lr": 0.00019473684210526317,
+      "elapsed_seconds": 52.875,
+      "targets": 2409300,
+      "tokens": 7676729,
+      "gpu": "107.67 W, 126.85 W, 60, 2542 MiB"
+    },
+    {
+      "step": 2800,
+      "loss": 4.791936874389648,
+      "gradient_norm": 0.3894343376159668,
+      "lr": 0.0001631578947368421,
+      "elapsed_seconds": 54.60899999993853,
+      "targets": 2499438,
+      "tokens": 7963100,
+      "gpu": "108.58 W, 126.85 W, 60, 2544 MiB"
+    },
+    {
+      "step": 2900,
+      "loss": 4.7853522300720215,
+      "gradient_norm": 0.374682754278183,
+      "lr": 0.00013157894736842105,
+      "elapsed_seconds": 56.343000000109896,
+      "targets": 2590104,
+      "tokens": 8250825,
+      "gpu": "93.21 W, 126.85 W, 61, 2544 MiB"
+    },
+    {
+      "step": 3000,
+      "loss": 4.7762980461120605,
+      "gradient_norm": 0.34768009185791016,
+      "lr": 0.0001,
+      "elapsed_seconds": 58.093000000109896,
+      "targets": 2679322,
+      "tokens": 8535812,
+      "gpu": "107.85 W, 126.85 W, 60, 2544 MiB"
+    }
+  ]
+}
